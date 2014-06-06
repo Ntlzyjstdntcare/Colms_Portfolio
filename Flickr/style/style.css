@@ -1,0 +1,197 @@
+
+/*This styling applies to everything on the page. It's purpose is to remove any default margins and padding
+that are applied to any element  */
+*
+{
+    margin: 0px;
+	padding: 0px;
+}
+
+/*Font styling for the h1 elements */
+h1
+{
+    font: bold 20px Tahoma;
+}
+
+/*Font styling for the h2 elements */
+h2
+{
+    font: bold 14px Tahoma;
+}
+
+/*Instruction for each of these elements on the page to displayed as block, and not inline, elements */
+header, section, footer, aside, nav, article, hgroup
+{
+    display: block;
+}
+
+/*Center-aligns the body element */
+body
+{
+    text-align: center;
+}
+
+/*Instructions for styling of the main div that encloses the entire body of the site */
+#big_wrapper
+{
+   border: 1px solid black;
+   width: 1000px;
+   margin: 20px auto;
+   text-align: left;
+}
+
+/*Instructions for the header within the main div */
+#top_header
+{
+    background: yellow;
+	border: 1px solid blue;
+	padding: 10px;
+}
+
+/*Instructions for styling the static text content of the page */
+#main_section
+{
+    float: left;
+	width: 440px;
+	margin: 30px;
+}
+
+/*This code styles the sidebar */
+#container
+{
+    float: left;
+	width: 440px;
+	margin: 20px 0px;
+	padding: 30px;
+	background:radial-gradient(#77d19e,#46c17b);/*#66CCCC;*/
+	text-align: center;
+	height:390px;
+	overflow:scroll;
+	
+
+}
+
+/*Here we style the footer */
+#the_footer
+{
+    clear:both;
+	text-align: center;
+	padding: 20px;
+	border-top: 2px solid green;
+}
+
+/*We apply further styling to the static text content */
+article
+{
+    background: #FFFBCC;
+	border: 1px solid red;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+/*The text content has its own footer element, which is separate to the page's main footer.
+We style it here */
+article footer
+{
+    text-align: right;
+}
+
+/*We set the dimensions and padding of the sidebar's search box, and set its position so that it is
+correctly position after the transition, which is described below, has taken place */
+#search
+{
+    position:relative;
+    top:20px;
+	width:300px;
+    padding:10px;
+}
+
+/*Here we style the button that sits below the search box and set its position */ 
+#button
+{
+    position:relative;
+    left:50px;
+	top:20px;
+	display: block;
+    width: 100px;
+    height:30px;
+    border:solid #366FEB 1px;
+    background: #91B2FA;
+}
+
+/*We style the list of pictures that will be retrieved by AJAX. We give each list element a height
+to ensure that both pictures and their taglines display correctly. We also set the colour to a graded green colour */ 
+aside ul li
+{
+    list-style-type: none;
+    border-bottom: dotted 1px black;
+    height: 500px;
+	background:radial-gradient(#77d19e,#46c17b);
+}
+
+/*When we hover on the list its color changes to this graded blue */  
+aside li:hover
+{
+    background: linear-gradient(to bottom, #8dd2d9 , #58c0c7);/*#A592E8;*/
+	
+}
+
+/*Here we style the text contained in the displayed list */ 
+aside a
+{
+    text-decoration: none;
+    font-size: 18px;
+} 
+
+/*This code helps to handle the transition of the sidebar. Here we set the transition to take place over a 1 second
+time period */ 
+.morph 
+{
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+/*On hovering over the sidebar, the edges are rounded and the entire element rotates 360 degrees */ 
+ .morph:hover 
+ {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* The following code will style the sidebar's scrollbar. This targets the default scrollbar (compulsory) */
+::-webkit-scrollbar 
+{
+      width: 15px;
+} 
+
+/* We set the scrollbar to have a flat appearance and set the background color */
+::-webkit-scrollbar-track 
+{
+      background-color: #FFFF00; /* #b46868; */
+} 
+
+/* We style the thumb of the scrollbar */
+ ::-webkit-scrollbar-thumb 
+ {
+      background-color: #77d19e; 
+}  
+
+/* Here style the top and the bottom buttons (left and right for horizontal bars) */ 
+::-webkit-scrollbar-button 
+{
+      background-color: #77d19e; /* #3B9C9C; */ /* #7c2929; */
+} 
+
+/* We give a distinct colour to the bottom-right corner, where the horizontal and
+vertical bars intersect */ 
+::-webkit-scrollbar-corner 
+{
+      background-color: black;
+} 

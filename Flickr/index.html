@@ -1,0 +1,63 @@
+
+<!--This is the home page from where we will send a request to server, via AJAX, and output the parsed contents of the
+XML feed that we receive from Flickr. The HTML is written according to the HTML5 standard, with the new doctype declaraion
+and use of the new semantic elements-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>Flickr Feed</title>
+	<!--This tag contains the path of the JavaScript file that contains our plain JavaScript and AJAX code-->
+	<script src="scripts/search.js" type="text/javascript" language="javascript"></script>
+	<link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <div id="big_wrapper">
+	
+		<header id="top_header">
+			<h1>Welcome to Your Flickr Feed!</h1>
+		</header>
+	
+		<!--This section contains the static text content of our page-->
+		<section id="main_section">
+			<article>
+				<header>
+					<hgroup>
+						<h1>About Flickr</h1>
+					</hgroup>
+				</header>
+				<p>
+				Flickr (pronounced "flicker") is an image hosting and video hosting website, 
+				and web services suite that was created by Ludicorp in 2004 and acquired by Yahoo in 2005. 
+				In addition to being a popular website for users to share and embed personal photographs, 
+				and effectively an online community, the service is widely used by photo researchers and 
+				by bloggers to host images that they embed in blogs and social media.
+                </p>
+				</br>
+				<header>
+					<hgroup>
+						<h1>How To Use This Page</h1>
+					</hgroup>
+				</header>
+				<p>
+				Enter a search term in the search box to the right and click the button. We will then search 
+				Flickr for images that are tagged with your search term! We will then present you with a 
+				constantly updated view of the images that are returned by the search.
+				</p>
+			</article>
+		</section>
+		
+		<!--This aside represents the sidebar which will hold our search box and button, and display the returned images-->
+		<aside id="container" class="morph pic">
+		    <input type="text" id="search" name="search" placeholder="Search Flickr Here!";/>
+            <input type="button" id="button" value="Search" onclick="process()" />
+            </br>
+			<!--Returned images will be displayed here as an unordered list-->
+			<ul id="result"></ul>
+		</aside>
+		
+		<footer id="the_footer">
+		    Copyright Colm Ginty 2014
+		</footer>
+	</div>
+</body>	
