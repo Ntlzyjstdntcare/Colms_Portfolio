@@ -17,7 +17,7 @@ broken links at that host, at the given URL. Written in Java.
 
 5) Mood-logging web app built using PHP and MySQL.
 
-6) Library program
+6) Simple program for managing a brick-and-mortar library. In Java.
 
 7) Choose Your Own Adventure application, built in Java. Designed to explore the Binary Tree data structure. This was a 
 group project involving four individuals. I came up with the original idea, and designed the CYOANode class.
