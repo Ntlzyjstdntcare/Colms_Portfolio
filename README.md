@@ -4,24 +4,23 @@ Colms_Portfolio
 Holds Colm Ginty's apps, all built over the last eight months (as of 06/06/2014).
 
 
-1) Java implementation of Dijkstra's algorithm for finding the shortest route between two points in a cyclical, 
-non-directed graph. Uses HashMaps for the primary data structures. Linear time complexity.
-
-2) AJAX web app which hosts a regularly updating photo stream from Flickr, based on the search term entered by the user. 
-Also uses PHP on the server side.
-
-3) Link checking app which takes a URL as a command line argument and outputs a table of host names, and the number of 
-broken links at that host, at the given URL. Written in Java.
-
-4) Sample e-commerce site, built using PHP and MySQL. JavaScript is used for most input checking.
-
-5) Mood-logging web app built using PHP and MySQL.
-
-6) Simple program for managing a brick-and-mortar library. In Java.
-
-7) Choose Your Own Adventure application, built in Java. Designed to explore the Binary Tree data structure. This was a 
+1) Choose Your Own Adventure application, built in Java. Designed to explore the Binary Tree data structure. This was a 
 group project involving four individuals. I came up with the original idea, and designed the CYOANode class.
 
+2) Java implementation of Dijkstra's algorithm for finding the shortest route between two points in a cyclical, 
+non-directed graph. Uses HashMaps for the primary data structures. Linear time complexity.
+
+3) AJAX web app which hosts a regularly updating photo stream from Flickr, based on the search term entered by the user. 
+Also uses PHP on the server side.
+
+4) Simple program for managing a brick-and-mortar library. In Java.
+
+5) Link checking app which takes a URL as a command line argument and outputs a table of host names, and the number of 
+broken links at that host, at the given URL. Written in Java.
+
+6) Sample e-commerce site, built using PHP and MySQL. JavaScript is used for most input checking.
+
+7) Mood-logging web app built using PHP and MySQL.
 
 
 The e-commerce site and the mood-logging app each require a 4-table database. The fields are, respectively:
